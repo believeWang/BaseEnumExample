@@ -10,9 +10,6 @@ This is a sample Spring Boot application that demonstrates an approach to handli
 - [Approach](#approach)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
