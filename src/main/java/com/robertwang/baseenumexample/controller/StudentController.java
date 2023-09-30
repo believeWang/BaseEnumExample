@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,7 +23,7 @@ public class StudentController {
     return ResponseEntity.ok(studentService.getAllStudent());
   }
   @PostMapping
-  public ResponseEntity<Void> insertStudent(StudentRequest request) {
+  public ResponseEntity<Void> insertStudent(@RequestBody StudentRequest request) {
     studentService.saveStudent(request);
     return ResponseEntity.noContent().build();
   }
